@@ -21,7 +21,7 @@ switch command {
     case "hwserver":
         try hwserver()
     case "rrbroker":
-        rrbroker()
+        try rrbroker()
     case "rrclient":
         try rrclient()
     case "rrworker":
