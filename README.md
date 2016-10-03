@@ -23,6 +23,16 @@ swift build && .build/debug/ZMQExamples hwserver
 swift build && .build/debug/ZMQExamples hwclient
 ```
 
+- To run the hello world client example (`rrclient`), please type:
+```
+swift build && .build/debug/ZMQExamples rrclient
+```
+
+- To run the hello world worker example (`rrworker`), please type:
+```
+swift build && .build/debug/ZMQExamples rrworker
+```
+
 - To run the version example (`version`), please type:
 ```
 swift build && .build/debug/ZMQExamples version

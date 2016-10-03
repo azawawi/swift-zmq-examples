@@ -6,7 +6,7 @@ func displayUsage() {
     let processName = CommandLine.arguments[0]
     print("\nUsage:")
     print("\t\(processName) example-name\n")
-    print("example-name can be hwclient, hwserver or version\n")
+    print("example-name can be hwclient, hwserver, rrclient, rrworker or version\n")
 }
 
 guard CommandLine.arguments.count >= 2 else {
@@ -20,6 +20,10 @@ switch command {
         try hwclient()
     case "hwserver":
         try hwserver()
+    case "rrclient":
+        try rrclient()
+    case "rrworker":
+        try rrworker()
     case "version":
         version()
     default:
