@@ -2,8 +2,8 @@
 
 This repository contains the [ZeroMQ](http://zeromq.org) examples for the
 [ZeroMQ Swift bindings](https://github.com/azawawi/swift-zmq). The code is
-written entirely in the [Swift](http://swift.org) language and be run from the
-command line on [Ubuntu](http://ubuntu.org) and Apple's
+written entirely in the [Swift](http://swift.org) language and can be run from
+the command line on [Ubuntu](http://ubuntu.org) and Apple's
 [MacOS](http://www.apple.com/macos).
 
 ## Usage
