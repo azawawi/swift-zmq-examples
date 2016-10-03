@@ -1,7 +1,6 @@
 
 // Hello World client in Swift
 
-import Foundation
 import ZMQ
 
 func hwclient() throws {
