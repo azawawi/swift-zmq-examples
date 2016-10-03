@@ -9,12 +9,12 @@ This repository contains the [ZeroMQ](http://zeromq.org) examples for the [ZeroM
 swift build && .build/debug/ZMQExamples
 ```
 
-- To run hello world client `hwserver`:
+- To run the hello world client example (`hwserver`):
 ```
 swift build && .build/debug/ZMQExamples hwserver
 ```
 
-- To run hello world client `hwclient`:
+- To run the hello world server example (`hwclient`):
 ```
 swift build && .build/debug/ZMQExamples hwclient
 ```
