@@ -9,7 +9,7 @@ func displayUsage() {
     print("example-name can be hwclient or hwserver\n")
 }
 
-guard CommandLine.arguments.count >= 1 else {
+guard CommandLine.arguments.count >= 2 else {
     displayUsage()
     exit(0)
 }
