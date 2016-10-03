@@ -8,34 +8,37 @@ command line on [Ubuntu](http://ubuntu.org) and Apple's
 
 ## Usage
 
+A convenience [`run.sh`](run.sh) script is provided in the root directory to
+build and run the examples.
+
 - To display usage help, simply type:
 ```
-swift build && .build/debug/ZMQExamples
+./run.sh
 ```
 
 - To run the hello world client example (`hwserver`), please type:
 ```
-swift build && .build/debug/ZMQExamples hwserver
+./run.sh hwserver
 ```
 
 - To run the hello world server example (`hwclient`), please type:
 ```
-swift build && .build/debug/ZMQExamples hwclient
+./run.sh hwclient
 ```
 
 - To run the hello world client example (`rrclient`), please type:
 ```
-swift build && .build/debug/ZMQExamples rrclient
+./run.sh rrclient
 ```
 
 - To run the hello world worker example (`rrworker`), please type:
 ```
-swift build && .build/debug/ZMQExamples rrworker
+./run.sh rrworker
 ```
 
 - To run the version example (`version`), please type:
 ```
-swift build && .build/debug/ZMQExamples version
+./run.sh version
 ```
 
 ## See Also
