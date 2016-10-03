@@ -41,6 +41,21 @@ build and run the examples.
 ./run.sh version
 ```
 
+## Installation
+
+ZeroMQ library `libzmq` is needed for the examples to work. Please follow the platform-specific instructions shown below:
+
+- On MacOS, please type:
+```
+$ brew update
+$ brew install zeromq
+```
+
+- On Ubuntu linux, please type:
+```
+$ sudo apt-get install libzmq3-dev
+```
+
 ## See Also
 
 - [Zewo's ZeroMQ swift bindings](https://github.com/ZewoGraveyard/ZeroMQ)
