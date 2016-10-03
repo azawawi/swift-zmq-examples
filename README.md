@@ -1,8 +1,12 @@
 # ZeroMQ Examples for Swift
 
+[![Swift][swift-badge]][swift-url]
+[![Platform][platform-badge]][platform-url]
+[![License][mit-badge]][mit-url]
+
 This repository contains the [ZeroMQ](http://zeromq.org) examples for the
 [ZeroMQ Swift bindings](https://github.com/azawawi/swift-zmq). The code is
-written entirely in the [Swift](http://swift.org) language and can be run from
+written entirely in the [Swift](http://swift.org) 3 language and can be run from
 the command line on [Ubuntu](http://ubuntu.org) and Apple's
 [MacOS](http://www.apple.com/macos).
 
