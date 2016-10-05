@@ -9,10 +9,10 @@ func hwclient() throws {
     let requestor = try context.socket(type: .req)
     try requestor.connect(endpoint: "tcp://localhost:5555")
 
-    for request_nbr in 0...9 {
-        print("Sending Hello \(request_nbr)...")
+    for requestNbr in 0...9 {
+        print("Sending Hello \(requestNbr)...")
         try requestor.send(string: "Hello")
         let _ = try requestor.recv()
-        print("Received World \(request_nbr)")
+        print("Received World \(requestNbr)")
     }
 }

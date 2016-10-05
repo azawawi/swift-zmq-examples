@@ -13,9 +13,9 @@ func rrclient() throws {
     let requester = try context.socket(type: .req)
     try requester.connect(endpoint: "tcp://localhost:5559")
 
-    for request_nbr in 1...10 {
+    for requestNbr in 1...10 {
         try requester.send(string: "Hello")
         let string = try requester.recv()
-        print("Received reply \(request_nbr) [\(string)]")
+        print("Received reply \(requestNbr) [\(string)]")
     }
 }
