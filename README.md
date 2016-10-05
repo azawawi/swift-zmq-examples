@@ -47,7 +47,7 @@ build and run the examples.
 
 ## Installation
 
-Please check [LibZMQ](https://github.com/azawawi/swift-libzmq) for installation
+Please check [LibZMQ](https://github.com/azawawi/swift-zmq) for installation
 instructions.
 
 ## See Also
