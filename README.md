@@ -20,27 +20,31 @@ build and run the examples.
 ./run.sh
 ```
 
-- To run the hello world client example (`hwserver`), please type:
+### Request-reply pattern
+
+- To run the hello world client example ([`hwserver`](Sources/hwserver.swift)), please type:
 ```
 ./run.sh hwserver
 ```
 
-- To run the hello world server example (`hwclient`), please type:
+- To run the hello world server example ([`hwclient`](Sources/hwclient.swift)), please type:
 ```
 ./run.sh hwclient
 ```
 
-- To run the hello world client example (`rrclient`), please type:
+### Publish-subscribe pattern
+- To run the hello world client example ([`rrclient`](Sources/rrclient.swift)), please type:
 ```
 ./run.sh rrclient
 ```
 
-- To run the hello world worker example (`rrworker`), please type:
+- To run the hello world worker example ([`rrworker`](Sources/rrworker.swift)), please type:
 ```
 ./run.sh rrworker
 ```
 
-- To run the version example (`version`), please type:
+### Utilities
+- To run the version example ([`version`](Sources/version.swift)), please type:
 ```
 ./run.sh version
 ```
