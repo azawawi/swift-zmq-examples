@@ -11,8 +11,8 @@ func rrworker() throws {
     let context = try ZMQ.Context()
 
     // Socket to talk to clients
-    let responder = try context.socket(type: .rep)
-    try responder.connect(endpoint: "tcp://localhost:5560")
+    let responder = try context.socket(.rep)
+    try responder.connect("tcp://localhost:5560")
 
     while true {
         // Wait for next request from client

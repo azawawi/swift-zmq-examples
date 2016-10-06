@@ -22,7 +22,7 @@ extension ZMQ {
             //TODO implement register
         }
 
-        func poll(type: PollingType) {
+        func poll(_ type : PollingType) {
             //TODO implement poll
         }
 
@@ -43,17 +43,17 @@ extension ZMQ {
 func rrbroker() throws {
 
     let context  = try ZMQ.Context()
-    let backend  = try context.socket(type: .dealer)
-    let frontend = try context.socket(type: .router)
-    try frontend.bind(endpoint: "tcp://*:5559")
-    try backend .bind(endpoint: "tcp://*:5560")
+    let backend  = try context.socket(.dealer)
+    let frontend = try context.socket(.router)
+    try frontend.bind("tcp://*:5559")
+    try backend .bind("tcp://*:5560")
 
     let poller = ZMQ.Poller()
     poller.register(socket: frontend, type: .pollin)
     poller.register(socket: backend,  type: .pollin)
 
     while true {
-        poller.poll(type: .blocking)
+        poller.poll(.blocking)
 //      
 //      poller.readables.each do |socket|
 //        if socket === frontend

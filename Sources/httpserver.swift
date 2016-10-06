@@ -5,8 +5,8 @@ func httpserver() throws {
     let context = try ZMQ.Context()
 
     // Create ZMQ_STREAM socket
-    let socket = try context.socket(type: .stream)
-    try socket.bind(endpoint: "tcp://*:8080")
+    let socket = try context.socket(.stream)
+    try socket.bind("tcp://*:8080")
 
     //TODO convert C example into Swift
 
