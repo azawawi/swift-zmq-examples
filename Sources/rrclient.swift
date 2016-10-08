@@ -10,7 +10,7 @@ func rrclient() throws {
     let context = try ZMQ.Context()
 
     // Socket to talk to server
-    let requester = try context.socket(.req)
+    let requester = try context.socket(.request)
     try requester.connect("tcp://localhost:5559")
 
     for requestNbr in 1...10 {

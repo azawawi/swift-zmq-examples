@@ -6,7 +6,7 @@ import ZMQ
 func hwclient() throws {
     print("Connecting to hello world server...")
     let context   = try ZMQ.Context()
-    let requestor = try context.socket(.req)
+    let requestor = try context.socket(.request)
     try requestor.connect("tcp://localhost:5555")
 
     for requestNbr in 0...9 {
